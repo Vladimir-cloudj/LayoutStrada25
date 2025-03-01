@@ -193,9 +193,27 @@ a{
     gap: 20px;
   }
 
+    .hello-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 10px;
+    }
+  
+    .hello-container_left {
+      max-width: 100%;
+    }
+
   .left_hi {
     font-size: 56px;
     line-height: 68px;
+    margin-bottom: 200px;
+  }
+
+  .right_text {
+    margin-top: -350px;
+    margin-bottom: 20px;
+    order: -1;
   }
 
   .left_button {
@@ -230,7 +248,7 @@ a{
   .left_hi {
     font-size: 48px;
     line-height: 58px;
-    margin-bottom: 40px;
+    margin-bottom: 140px;
   }
 
   .right_text {
@@ -238,6 +256,7 @@ a{
     line-height: 32px;
     min-height: auto;
     padding-top: 20px;
+    margin-top: -250px;
   }
 
   .left_button {
@@ -258,23 +277,28 @@ a{
       top: 60px;
       left: 0;
       z-index: 10;
-    }
+  }
   
-    .nav-list.active {
-      display: flex;
-    }
+  .nav-list.active {
+    display: flex;
+  }
   
-    .hamburger {
-      display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
   .left_hi {
     font-size: 36px;
     line-height: 46px;
+    margin-bottom: 150px;
   }
 
   .left_button {
     font-size: 28px;
     padding: 15px;
+  }
+
+  .right_text {
+      margin-top: -300px;
   }
 
   a {

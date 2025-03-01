@@ -169,3 +169,85 @@ a{
   padding: 29px 75px;
 }
 
+/* Адаптивные стили */
+
+/* Для экранов до 1280px */
+@media (max-width: 1280px) {
+  .nav-list {
+    gap: 20px;
+  }
+
+  .left_hi {
+    font-size: 56px;
+    line-height: 68px;
+  }
+
+  .left_button {
+    min-width: 100%;
+    padding: 25px;
+  }
+}
+
+/* Для экранов до 1024px */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hello-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 10px;
+  }
+
+  .hello-container_left {
+    max-width: 100%;
+  }
+
+  .left_hi {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 40px;
+  }
+
+  .right_text {
+    font-size: 24px;
+    line-height: 32px;
+    min-height: auto;
+    padding-top: 20px;
+  }
+
+  .left_button {
+    width: 100%;
+    padding: 20px;
+    font-size: 32px;
+  }
+}
+
+/* Для экранов до 767.99px */
+@media (max-width: 767.99px) {
+  .left_hi {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .left_button {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  a {
+    font-size: 24px;
+  }
+
+  .hello-container {
+    padding: 30px 10px;
+  }
+}

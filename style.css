@@ -187,10 +187,95 @@ a {
   padding: 29px 75px;
 }
 
+/* Анимация кнопки при наведении */
+.left_button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.left_button:hover {
+  background-color: #B0B0B0;
+  /* Изменение цвета фона */
+  transform: scale(1.05);
+  /* Увеличение размера */
+}
+
+/* Анимация кнопки при нажатии */
+.left_button:active {
+  transform: scale(0.95);
+  /* Уменьшение размера */
+}
+
 .profile-image {
   border-radius: 50%;
   width: 26.875vw;
   height: 26.875vw;
+}
+
+.skills {
+  background: #EADED4;
+  background-image: url('https://imageup.ru/img79/4679425/fon11.jpeg');
+  background-size: cover;
+}
+
+.skills-container {
+  flex-direction: column;
+  padding-top: 135px;
+  padding-bottom: 150px;
+}
+
+.skills-name {
+  font-size: 72px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.skills-ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.skill {
+  width: 33.3%;
+  border: 5px solid #D9AA90;
+}
+
+.skill:nth-child(even) {
+  border: 5px solid #07203F;
+}
+
+.skill-img {
+  position: relative;
+  padding-top: 60%;
+}
+
+.skill-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.skill-text {
+  background: #07203F;
+  text-align: center;
+  padding: 38px 0;
+}
+
+.skill:nth-child(even)>.skill-text {
+  background: #D9AA90;
+}
+
+.skill-text>p {
+  font-size: 72px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
 }
 
 /* Адаптивные стили */

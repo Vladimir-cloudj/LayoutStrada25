@@ -213,14 +213,16 @@ a {
 
 .skills {
   background: #EADED4;
-  background-image: url('https://imageup.ru/img79/4679425/fon11.jpeg');
+  /* background-image: url('https: //demo-source.imgix.net/sneakers.jpg'); */
   background-size: cover;
 }
 
 .skills-container {
   flex-direction: column;
-  padding-top: 135px;
+  padding-top: 100px;
   padding-bottom: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .skills-name {
@@ -373,6 +375,22 @@ a {
     width: 52.25vw;
     height: 52.25vw;
   } */
+   .skills-ul { 
+    /* padding: 0 auto; */
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    margin-left: 28%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-height: 75vw;
+  } 
+  .skill:nth-child(2) {
+    transform: translate(53%, -58%);
+  }
+  .skill:nth-child(3) {
+    transform: translate(112%, -116%);
+  }
 }
 
 /* Для экранов до 767.99px */
@@ -418,9 +436,43 @@ a {
   .hello-container {
     padding: 30px 10px;
   }
+
+  .skills-ul {
+    display: flex;
+    margin-left: 0%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 125vw;
+  }
+  .skill:nth-child(2) {
+    transform: translate(0, 0);
+  }
+  
+  .skill:nth-child(3) {
+    transform: translate(0%, -0%);
+  }
+  .skill-text>p {
+    font-size: 54px;
+  }
 }
 
 @media (max-width: 479.99px) {
+  .skills-container {
+    height: 340vh;
+    /* justify-content: normal; */
+    gap: 5px;
+  }
+  .skills-ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  .skill {
+    width: 80%;
+  }
   .profile-image {
       width: 72.25vw;
       height: 72.25vw;
